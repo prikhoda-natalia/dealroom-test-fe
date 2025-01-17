@@ -6,11 +6,9 @@ Welcome to the **Dealroom Test Front-End** repository! This project showcases th
 
 - [Project Overview](#project-overview)
 - [Task Description](#task-description)
-- [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Setup](#setup)
 - [Start](#start)
-- [Development](#development)
 
 ---
 
@@ -28,7 +26,6 @@ The assignment included two main parts: backend API implementation and frontend 
 
 - Develop an endpoint to retrieve the companies' data provided in `data.json`.
 - Push the code to a GitHub repository.
-- Optionally, deploy the application on a free hosting platform.
 
 ### Frontend Implementation
 
@@ -50,7 +47,6 @@ The assignment included two main parts: backend API implementation and frontend 
 - **State Management**: Redux.js
 - **Build Tools**: Webpack
 - **Styling**: Tailwind CSS
-- **Other Tools**: ESLint, Prettier, Husky
 
 ## Setup
 
