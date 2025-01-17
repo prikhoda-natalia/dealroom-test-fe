@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Dealroom Test Front-End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+Welcome to the **Dealroom Test Front-End** repository! This project showcases the implementation of a technical assignment for the Fullstack Engineer position at Dealroom.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Project Overview](#project-overview)
+- [Task Description](#task-description)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup](#setup)
+- [Start](#start)
+- [Development](#development)
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project Overview
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This repository contains the front-end code for a homework assignment completed as part of the interview process for the Fullstack Engineer position at Dealroom. The project focuses on implementing a React.js-based frontend application, which consumes a Node.js API to display and categorize company data.
 
-### `yarn test`
+The backend API implementation for this project can be found in the [dealroom-test-be](https://github.com/prikhoda-natalia/dealroom-test-be) repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Task Description
 
-### `yarn build`
+The assignment included two main parts: backend API implementation and frontend development.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend API Implementation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Develop an endpoint to retrieve the companies' data provided in `data.json`.
+- Push the code to a GitHub repository.
+- Optionally, deploy the application on a free hosting platform.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Frontend Implementation
 
-### `yarn eject`
+- Fetch the companies' data from the API created in the backend task.
+- Categorize the companies by their respective industries. For each industry, render a card displaying the list of companies belonging to that industry, sorted in alphabetical order.
+- The card's title should be the industry name.
+- Display the count of companies in that industry at the top right corner of the card.
+- Implement the company grouping logic by industry on the frontend, optimized for scalability with large datasets.
+- Use [Tailwind CSS](https://tailwindcss.com/) for card design, following the specifications in the [Figma file](https://www.figma.com/design/9GvGhDV1Te6bQzS1GLoj8J/Dealroom-FE-Assessment?node-id=0%3A1&t=I6Ph4vb2EAvbkQQ7-1).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Card Design](./task/assets/card.svg)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Tech Stack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Framework**: React.js
+- **Languages**: TypeScript, JavaScript, HTML, CSS
+- **State Management**: Redux.js
+- **Build Tools**: Webpack
+- **Styling**: Tailwind CSS
+- **Other Tools**: ESLint, Prettier, Husky
 
-## Learn More
+## Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Follow these steps to set up the project locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the Repository**:
+
+   ```bash
+   git clone https://github.com/prikhoda-natalia/dealroom-test-fe.git
+   cd dealroom-test-fe
+   ```
+
+2. **Install Dependencies**:
+
+   ```bash
+   yarn install
+   ```
+
+## Start
+
+**Note:** Ensure the backend repository [dealroom-test-be](https://github.com/prikhoda-natalia/dealroom-test-be) is running before starting this front-end application, so the app can fetch data correctly
+
+1. **Start the Development Server**:
+
+   ```bash
+   yarn start
+   ```
+
+2. **Open the App**: Visit [http://localhost:3000](http://localhost:3000) in your browser.
